@@ -33,8 +33,8 @@
   </head>
   <body>
     <!-- Banner Section -->
-    <section class="grid grid-cols-2 container border border-red-500 mx-auto">
-      <div class="banner-left space-y-[30px]">
+    <section class="grid grid-cols-1 md:grid-cols-2 container mx-auto">
+      <div class="space-y-[30px] banner-left">
         <h2 class="text-[80px] font-bold">
           It's good <br />
           tea time at The <br />
@@ -47,17 +47,27 @@
         </p>
 
         <button
-          class="py-3 px-5 rounded-md text-white font-semibold bg-linear-to-r from-[#ff8938] to-[#ff0000]"
+          class="py-3 px-5 text-white font-semibold bg-linear-to-r from-[#ff8938] to-[#ff0000] rounded-md"
         >
           Explore More
-          <span class="-rotate-45 inline-block">
+          <span class="inline-block -rotate-45">
             <i class="fa-solid fa-arrow-right"></i>
           </span>
         </button>
       </div>
 
-      <div class="banner-right">
-        <img src="./images/banner.png" alt="" />
+      <div class="flex justify-end items-end relative banner-right">
+        <img class="" src="./images/banner.png" alt="" />
+
+        <div
+          class="flex justify-center items-center absolute bottom-[15px] left-[200px] w-[250px] py-[25px] px-[15px] bg-white rounded-xl shadow-2xl gap-2"
+        >
+          <img src="./images/banner-rating.png" alt="" />
+          <div>
+            <h2 class="font-bold text-2xl">5.00</h2>
+            <p>Trust Rating</p>
+          </div>
+        </div>
       </div>
     </section>
   </body>
